@@ -1,14 +1,14 @@
 ﻿<!DOCTYPE html/>
 <html>
 <head>
-    <script src="js/jquery.js" type="text/javascript"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript"
+	src="http://maps.google.com/maps/api/js?sensor=false">
     </script>
-    <title>BHMAC Polygons</title>
-    <script type="text/javascript">
-          
+<title>BHMAC Polygons</title>
+<script type="text/javascript">
 	<?
-		include 'include/map.php';
+	include 'include/map.php';
 	?>
         var dbMapPoints = [
             <?
@@ -45,9 +45,7 @@
                 return (p.pol_id === pol_id); 
                 }), function () {
                 latlng.push(new google.maps.LatLng(this.lat, this.lng));
-
             })).done(function () {
-
                 mapPoly = new google.maps.Polygon({
                     paths: latlng,
                     strokeColor:'#FF0000', 
@@ -57,15 +55,13 @@
                     fillOpacity: 0.35
                 });
                 mapPoly.setMap(map);
-
             });
         }
     </script>
 </head>
 <body>
-    <section id="placeholder">
-        <div id="map" style="width: 100%; height: 100%;">
-        </div>
-    </section>
+	<section id="placeholder">
+		<div id="map" style="width: 100%; height: 100%;"></div>
+	</section>
 </body>
 </html>
