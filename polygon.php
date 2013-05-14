@@ -5,7 +5,7 @@
 <script type="text/javascript"
 	src="http://maps.google.com/maps/api/js?sensor=false">
     </script>
-<title>BHMAC Polygons</title>
+<title>Parse MIF File</title>
 <script type="text/javascript">
 	<?
 	include 'include/map.php';

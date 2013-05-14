@@ -34,15 +34,11 @@ function parse_mif($file_name)
 					$i++;
 					$x++;
 				}
-
 			}
-			 
 		}
 	}
 	$rez[0]=$x; // Return number of polygons
 	$rez[1]=substr($ret, 0, -1); // Actual polygons
 	return $rez;
 }
-
-
 ?>
