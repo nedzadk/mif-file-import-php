@@ -2,9 +2,7 @@
 <html>
 <head>
 <script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript"
-	src="http://maps.google.com/maps/api/js?sensor=false">
-    </script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <title>Parse MIF File</title>
 <script type="text/javascript">
 	<?
